@@ -1,0 +1,47 @@
+<template>
+  <div class ="list">
+  <input type="search" placeholder="Search workload..." oninput={handleSearchKeyInput} />
+  <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered" aria-label="Example table of Opportunities with vertical borders">
+    <thead>
+      <tr class="slds-line-height_reset">
+        <th class="" scope="col">
+          <div title="Cloud">Cloud</div>
+        </th>
+        <th class="" scope="col">
+          <div title="Test Suite">Test Suite</div>
+        </th>
+        <th class="" scope="col">
+          <div title="Test Run">Test Run</div>
+        </th>
+        <th class="" scope="col">
+          <div title="Workload Id">Workload Id</div>
+        </th>
+        <th class="" scope="col">
+          <div title="Result">Result</div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <template for:each={workloads} for:item="workload" for:index="index">
+      <tr class="slds-hint-parent" key={workload.testrunid}>
+        <th data-label="Cloud" scope="row">
+          <div title="Cloud">{workload.cloud}</div>
+        </th>
+        <td data-label="Test Suite">
+          <div title="Test Suite">{workload.testsuite}</div>
+        </td>
+        <td data-label="Test Run">
+          <div title="Test Run">{workload.testrun}</div>
+        </td>
+        <td data-label="Workload Id">
+          <div title="Workload Id">{workload.testrunid}</div>
+        </td>
+        <td data-label="Confidence">
+          <div title="Result">{workload.result}</div>
+        </td>
+      </tr>
+    </template>
+    </tbody>
+    </table>
+  </div>
+  </template>

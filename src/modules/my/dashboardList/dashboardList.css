@@ -1,0 +1,28 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+td, th {
+    width: 40rem;
+    height: 2rem;
+    border: 1px solid #ccc;
+    text-align: center;
+    
+  }
+  thead {
+    background: #0288d1;
+    border-color: rgb(243, 238, 238);
+    color: white;
+    font-size: larger;
+    box-shadow: 0 4px 3px rgb(1 87 155 / 50%);
+  }
+  body {
+    padding: 1rem;
+  }
+  input {
+    width: 500px; /* When specifying this, you can use both px and % */
+    height : 40px;
+    padding: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
