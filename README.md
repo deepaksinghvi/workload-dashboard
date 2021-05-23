@@ -7,5 +7,5 @@ Here will be some information about the app.
 Start app locally by running `npm run watch`, if you set up the project with `npm`). This will start the project with a local development server.
 
 
-Deployed on Heroku https://secret-savannah-80175.herokuapp.com/
-GitHub 
+Deployed on Heroku https://secret-savannah-80175.herokuapp.com/ \
+GitHub https://github.com/deepaksinghvi/workload-dashboard
